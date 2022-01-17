@@ -1,1 +1,19 @@
 /*Add styles here*/
+/*@font-face {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.googleapis.com/css2?family=Play&display=swap) format('play');
+}*/
+
+h1{
+    font-family: 'DM Serif Display', 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+p{
+    font-family: 'Play', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
