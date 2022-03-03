@@ -22,7 +22,7 @@ header{
 }
 nav{
     list-style-type:none;
-    margin:0;
+    margin:auto 0;
     padding:0;
     overflow:hidden;
 }
@@ -112,6 +112,9 @@ li{
     background-color:white;
     border:.5px solid black;
     border-radius:5px;
+}
+.button_logo{
+    margin:auto 0;
 }
 .button_logo img{
     height:30px;
