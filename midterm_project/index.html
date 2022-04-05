@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name='viewport' content="width=device-width, initial-scale=1">
 
-    <title>Midterm 2
+    <title>Van Camp Midterm Project
     </title>
     <meta name="description" content="Midterm Project">
     <meta name="author" content="Emily Van Camp">
@@ -83,10 +83,15 @@
             </div>
         </section>
         <section id="five">
-            <video class="five__video" controls="controls" width=600px height=400px autoplay poster="img/image4.jpg">
-                <source src="img/video.mp4" type="video/mp4">
-            </video>
-            <!-- <iframe src="https://www.youtube.com/embed/79kpoGF8KWU" title="YouTube video player" frameborder="0" allowfullscreen scrolling="no"></iframe> -->
+            <div class="five__video-container">
+                <div class="five__video-thumbnail">
+                    <video src="img/video.mp4" poster="img/image4.jpg" muted></video>
+                </div>
+            </div>
+            <div class="five__video-popup-container">
+                <span>&times;</span>
+                <video src="img/video.mp4" muted autoplay controls></video>
+            </div>
             <div class="five__text">
                 <h2>Title</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilis at vero eros es accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facillsi</p>
@@ -102,5 +107,6 @@
             <a href="#">Lorem ipsum</a>
             <a href="#">Lorem ipsum</a>
         </nav>
-    </footer>
+    </footer>        
+    <script src="js/script.js"></script>
 </body>
