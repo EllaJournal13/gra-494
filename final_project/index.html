@@ -74,7 +74,9 @@
               The "luxury" liquor is marketed as the world's first super premium vodka. Since entering the U.S. market,
               Belvedere has partnered with a number of celebrities including Chelsea Handler, Usher and John Legend.
               Want a taste of luxury, sign up below to get a free sample bottle!</p>
-          <button href=#contact-form>Sample Sign Up</button>
+          <a href="#contact-form">
+            <button href=#contact-form>Sample Sign Up</button>
+          </a>
         </div>
       </div>
     </div>
@@ -191,15 +193,20 @@
 
     <!-- video list -->
     <div id="vids">
-      <div class="video">
+      
+      <div class="video" id="blur">
         <div class="video__container">
           <div class="video__thumbnail video1">
-            <video src="img/video.mp4" poster="img/vid1-img.jpg" muted></video>
+            <div><img src="img/absolut.jpeg" alt="x" width="700px" height="400px" align-items="center" onclick="toggle()"></div>
+            <!-- <video src="img/video.mp4" poster="img/vid1-img.jpg" muted></video> -->
           </div>
         </div>
-        <div class="video__popup-container video1__popup">
+
+        <div class="video__popup-container video1__popup" id="popup">
           <span>&times;</span>
-          <video src="img/video.mp4" autoplay controls></video>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/cbfDGMfXimA"></iframe>
+        </iframe>
+          <!-- <video src="img/video.mp4" autoplay controls></video> -->
         </div>
         <div class="video__text">
             <h2>The True American Vodka</h2>
@@ -207,7 +214,7 @@
         </div>
       </div>
 
-      <div class="video">
+      <!-- <div class="video">
         <div class="video__container">
           <div class="video__thumbnail video2">
             <video src="img/video.mp4" poster="img/vid2-img.jpg" muted></video>
@@ -237,11 +244,12 @@
             <h2>The True American Vodka</h2>
             <p>Tito's Handmade Vodka was founded in Austin, Texas in 1997.  This all American vodka is made from yellow corn, rather than pottoes or wheat.  It's distilled 6 times and unaged.  The founder is the man in the video, Bert Butle Beveridge who is nicknamed Tito due to the shortening of his nickname Bertito, which was given to him by his latino caregivers as a child.  be sure to try this All American Vodka!</p>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- contact form-->
-    <div id="contact-form">
+    <div id="test"></div>
+    <div id="contact-form" name="contact-form">
       <div class="article__content">
         <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Phasellus bibendum lobortis purus, non volutpat urna sagittis condimentum.
