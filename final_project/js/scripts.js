@@ -24,4 +24,13 @@ $( document ).ready(function() {
   selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
 
 $('#random-shit').css('background', 'url(' + selectBG + ')')
-  });
+});
+  
+document.querySelector('.video__thumbnail').onclick = () => {
+  document.querySelector('.video__popup-container').style.display = 'block';
+    document.querySelector('.video__popup-container video').src = vid.getAttribute('src');
+}
+
+document.querySelector('.video__popup-container span').onclick = () => {
+  document.querySelector('video__popup-container').style.display = 'none';
+}
