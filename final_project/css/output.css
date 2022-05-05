@@ -460,10 +460,10 @@ nav button:hover {
   transform:scale(1.2);
 }
 
-#videos{
+#vids{
   display:flex;
   flex-direction:column;
-  gap:50px;
+  gap:30px;
 }
 .video{
   flex-direction:row;
@@ -490,6 +490,7 @@ nav button:hover {
   height:100%;
   width:100%;
   object-fit:cover;
+  vertical-align:middle;
 }
 .video__popup-container{
   position:fixed;
@@ -530,33 +531,90 @@ nav button:hover {
   margin-bottom: 50px;
 }
 
-/* .section5 {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-content: space-between;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding-left: 3%;
-  padding-right: 3%;
-  align-items: center;
+/* Contact Form */
+#contact-form{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:10%;
+  gap:30px;
 }
-.section5 .section5__contain {
+.article__content{
   flex-basis: calc(50% - 1rem);
   flex-shrink: 0;
   flex-grow: 0;
-  margin: 1rem;
 }
-.section5 .section5__contain p {
+.article__content p{
   width: 90%;
+  margin-bottom: 50px;
 }
-.section5 #section5_video {
-  flex-basis: calc(50% - 1rem);
-  flex-shrink: 0;
-  flex-grow: 0;
-  margin: 0.5rem;
-  width: 100%;
-} */
+form{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  width:50%;
+}
+form #submit{
+  width:30%;
+  margin:auto;
+}
+form input[type=text],form textarea{
+  border:none;
+  border-bottom:1px solid #3452AD;
+}
+
+.contact-form__overlay{
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  backdrop-filter:blur(5px);
+  z-index:100;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  display:none;
+}
+.contact-form__overlay .close{
+  display:inline-block;
+  cursor:pointer;
+  position:absolute;
+  top:30px;
+  right:30px;
+}
+.contain-wrapper{
+  display:flex;
+  justify-content:center;
+  position:relative;
+  transform:translate(0,50%);
+  align-items:center;
+}
+.output{
+  display:flex;
+  flex-direction:column;
+  width:60%;
+}
+.output p{
+  text-align:center;
+}
+#contact-submit{
+  background:white;
+  border-radius:5px;
+  width:80%;
+  height:auto;
+  margin:0 auto;
+  position:absolute;
+  transform:translate(0,85%);
+}
+#first-name, #last-name, #message-content{
+  display:flex;
+  width:60%;
+  height:50px;
+  margin:auto;
+  align-content:center;
+  align-items:center;
+}
 
 footer {
   padding-left: 3%;

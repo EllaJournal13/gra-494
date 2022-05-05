@@ -239,6 +239,46 @@
         </div>
       </div>
     </div>
+
+    <!-- contact form-->
+    <div id="contact-form">
+      <div class="article__content">
+        <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Phasellus bibendum lobortis purus, non volutpat urna sagittis condimentum.
+          Fusce urna nulla, condimentum sit amet dolor et, mollis auctor purus.
+          Praesent ut eleifend tellus, sit amet dictum lectus.
+          Vivamus iaculis, sem id commodo molestie, nibh felis cursus orci,
+          sed tincidunt ipsum purus ac dui. Pellentesque habitant morbi tristique
+          senectus et netus et malesuada fames ac turpis egestas.
+          Donec varius nisi massa, vitae sagittis justo bibendum convallis.
+          Duis elementum in arcu et gravida. Ut est neque, imperdiet ut cursus eget,
+          blandit non lectus. Nunc maximus libero vestibulum dolor vestibulum,
+          vulputate vehicula nisi mollis. Vivamus congue, turpis non
+          ultrices interdum, ipsum quam rutrum mi, sit amet porttitor
+          ante ipsum in elit.</p>
+      </div>
+
+      <form id="myForm" method="POST" name="myForm">
+        <h3 class=article__title">Contact Us</h3>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <textarea name="message" id="message" rows="10" cols="30"></textarea><br>
+        <input type="submit" id="submit" value="Submit" onclick="displayText()">
+      </form>
+
+      <div class="contact-form__overlay">
+        <div class="contain-wrapper">
+          <div class="output" id="contact-submit">
+            <p id="first-name"></p>
+            <p id="last-name"></p>
+            <p id="message-content"></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
     
     <footer>
       <div id="logo" title="Logo"></div>
