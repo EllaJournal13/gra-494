@@ -18,11 +18,29 @@ if (x.style.display === "block") {
 // $('#random-shit').css('background', 'url(' + selectBG + ')')
 // });
   
-document.querySelector('.video__thumbnail').onclick = () => {
-  document.querySelector('.video__popup-container').style.display = 'block';
-    document.querySelector('.video__popup-container video').src = vid.getAttribute('src');
+document.querySelector('.video1').onclick = () => {
+  document.querySelector('.video1__popup').style.display = 'block';
+    document.querySelector('.video1__popup video').src = vid.getAttribute('src');
 }
 
-document.querySelector('.video__popup-container span').onclick = () => {
-	document.querySelector('.video__popup-container').style.display = 'none';
+document.querySelector('.video1__popup span').onclick = () => {
+	document.querySelector('.video1__popup').style.display = 'none';
+}
+
+document.querySelector('.video2').onclick = () => {
+  document.querySelector('.video2__popup').style.display = 'block';
+    document.querySelector('.video1__popup video').src = vid.getAttribute('src');
+}
+
+document.querySelector('.video2__popup span').onclick = () => {
+	document.querySelector('.video2__popup').style.display = 'none';
+}
+
+document.querySelector('.video3').onclick = () => {
+  document.querySelector('.video3__popup').style.display = 'block';
+    document.querySelector('.video3__popup video').src = vid.getAttribute('src');
+}
+
+document.querySelector('.video3__popup span').onclick = () => {
+	document.querySelector('.video3__popup').style.display = 'none';
 }

@@ -460,6 +460,11 @@ nav button:hover {
   transform:scale(1.2);
 }
 
+#videos{
+  display:flex;
+  flex-direction:column;
+  gap:50px;
+}
 .video{
   flex-direction:row;
   align-items:flex-start;
@@ -474,7 +479,7 @@ nav button:hover {
   margin:0;
   padding:0;
   width: 100%;
-  min-height: 400px;
+  max-height: 400px;
   flex-basis: calc(50% - 1rem);
   flex-shrink: 0;
   flex-grow: 0;
