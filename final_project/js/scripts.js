@@ -10,21 +10,13 @@ if (x.style.display === "block") {
   y.classList.add("active");
   }
 }
-
-//Display random banner//
-// $( document ).ready(function() {
-//   var bgArray = ['img/random/random1.jpg','img/random/random2.jpg','img/random/random3.jpg','img/random/random4.jpg','img/random/random5.jpg','img/random/random6.jpg'],
-//   selectBG = bgArray[Math.floor(Math.random() * bgArray.length)];
-
-// $('#random').css('background', 'url(' + selectBG + ')')
-// });
   
-$( document ).ready(function() {
-  var bgColorArray = ['imgs/001.jpg','imgs/002.jpg', 'imgs/003.jpg', 'imgs/004.jpg', 'imgs/005.jpg'],
-  selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
+// $( document ).ready(function() {
+//   var bgColorArray = ['imgs/001.jpg','imgs/002.jpg', 'imgs/003.jpg', 'imgs/004.jpg', 'imgs/005.jpg'],
+//   selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
 
-$('#random-shit').css('background', 'url(' + selectBG + ')')
-});
+// $('#random-shit').css('background', 'url(' + selectBG + ')')
+// });
   
 document.querySelector('.video__thumbnail').onclick = () => {
   document.querySelector('.video__popup-container').style.display = 'block';
@@ -32,5 +24,5 @@ document.querySelector('.video__thumbnail').onclick = () => {
 }
 
 document.querySelector('.video__popup-container span').onclick = () => {
-  document.querySelector('video__popup-container').style.display = 'none';
+	document.querySelector('.video__popup-container').style.display = 'none';
 }

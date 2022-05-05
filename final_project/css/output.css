@@ -460,7 +460,7 @@ nav button:hover {
   transform:scale(1.2);
 }
 
-#video{
+.video{
   flex-direction:row;
   align-items:flex-start;
   height:fit-content;
@@ -473,8 +473,11 @@ nav button:hover {
 .video__thumbnail{
   margin:0;
   padding:0;
-  height:400px;
-  width:700px;
+  width: 100%;
+  min-height: 400px;
+  flex-basis: calc(50% - 1rem);
+  flex-shrink: 0;
+  flex-grow: 0;
   cursor:pointer;
   overflow:hidden;
 }
@@ -505,12 +508,21 @@ nav button:hover {
 }
 .video__popup-container span{
   position:absolute;
-  bottom:60px;
-  left:50px;
+  top:50px;
+  right:50px;
   font-size:30px;
-  color:white;
+  color:#3452AD;
   z-index:100;
   cursor:pointer;
+}
+.video__text{
+  flex-basis: calc(50% - 1rem);
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.video__text p{
+  width: 90%;
+  margin-bottom: 50px;
 }
 
 /* .section5 {
