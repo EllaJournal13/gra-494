@@ -47,6 +47,23 @@ document.querySelector('.video3__popup span').onclick = () => {
 
 
 //Contact Form
+
+document.addEventListener('DOMContentLoaded', () => {
+  const submit = document.querySelector('#submit');
+  const closeBtn = document.querySelector('.close');
+  const contactformoverlay = document.querySelector('.contact-form__overlay');
+
+  submit.addEventListener('click', () => {
+    contactformoverlay.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    contactformoverlay.style.display = 'none';
+  });
+
+});
+
+
 $("#myForm").submit(function(e) {
   e.preventDefault();
 });
@@ -54,30 +71,30 @@ $("#myForm").submit(function(e) {
 
 
 function displayText(){
-// Selecting the input element and get its value --- FIRST NAME
-var text = document.getElementById("fname").value;
+  // Selecting the input element and get its value --- FIRST NAME
+  var text = document.getElementById("fname").value;
 
-// Displaying the value
-var output = document.getElementById("first-name");
-output.innerHTML = text;
-
-
-
-// Selecting the input element and get its value --- LAST NAME
-var text2 = document.getElementById("lname").value;
-
-// Displaying the value
-var output2 = document.getElementById("last-name");
-output2.innerHTML = text2;
+  // Displaying the value
+  var output = document.getElementById("first-name");
+  output.innerHTML = text;
 
 
 
-// Selecting the input element and get its value --- MESSAGE
-var text3 = document.getElementById("message").value;
+  // Selecting the input element and get its value --- LAST NAME
+  var text2 = document.getElementById("lname").value;
 
-// Displaying the value
-var output3 = document.getElementById("message-content");
-output3.innerHTML = text3;
+  // Displaying the value
+  var output2 = document.getElementById("last-name");
+  output2.innerHTML = text2;
+
+
+
+  // Selecting the input element and get its value --- MESSAGE
+  var text3 = document.getElementById("message").value;
+
+  // Displaying the value
+  var output3 = document.getElementById("message-content");
+  output3.innerHTML = text3;
 
 
 }
