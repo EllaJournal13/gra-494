@@ -64,9 +64,9 @@ if (x.style.display === "block") {
  });
 
 
- $("#myForm").submit(function(e) {
-   e.preventDefault();
- });
+//  $("#myForm").submit(function(e) {
+//    e.preventDefault();
+//  });
 
 
 
@@ -98,10 +98,3 @@ if (x.style.display === "block") {
 
 
  }
-
-function toggle() {
-  var blur = document.getElementById('blur')
-  blur.classList.toggle('active');
-  var popup = document.getElementById('vidPopup')
-  popup.classList.toggle('active');
-}
