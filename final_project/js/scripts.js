@@ -18,90 +18,90 @@ if (x.style.display === "block") {
 // $('#random-shit').css('background', 'url(' + selectBG + ')')
 // });
   
-// document.querySelector('.video1').onclick = () => {
-//   document.querySelector('.video1__popup').style.display = 'block';
-//     document.querySelector('.video1__popup video').src = vid.getAttribute('src');
-// }
+ document.querySelector('.video1').onclick = () => {
+   document.querySelector('.video1__popup').style.display = 'block';
+     document.querySelector('.video1__popup video').src = vid.getAttribute('src');
+ }
 
-// document.querySelector('.video1__popup span').onclick = () => {
-// 	document.querySelector('.video1__popup').style.display = 'none';
-// }
+ document.querySelector('.video1__popup span').onclick = () => {
+ 	document.querySelector('.video1__popup').style.display = 'none';
+ }
 
-// document.querySelector('.video2').onclick = () => {
-//   document.querySelector('.video2__popup').style.display = 'block';
-//     document.querySelector('.video1__popup video').src = vid.getAttribute('src');
-// }
+ document.querySelector('.video2').onclick = () => {
+   document.querySelector('.video2__popup').style.display = 'block';
+     document.querySelector('.video1__popup video').src = vid.getAttribute('src');
+ }
 
-// document.querySelector('.video2__popup span').onclick = () => {
-// 	document.querySelector('.video2__popup').style.display = 'none';
-// }
+ document.querySelector('.video2__popup span').onclick = () => {
+ 	document.querySelector('.video2__popup').style.display = 'none';
+ }
 
-// document.querySelector('.video3').onclick = () => {
-//   document.querySelector('.video3__popup').style.display = 'block';
-//     document.querySelector('.video3__popup video').src = vid.getAttribute('src');
-// }
+ document.querySelector('.video3').onclick = () => {
+   document.querySelector('.video3__popup').style.display = 'block';
+     document.querySelector('.video3__popup video').src = vid.getAttribute('src');
+ }
 
-// document.querySelector('.video3__popup span').onclick = () => {
-// 	document.querySelector('.video3__popup').style.display = 'none';
-// }
-
-
-// //Contact Form
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const submit = document.querySelector('#submit');
-//   const closeBtn = document.querySelector('.close');
-//   const contactformoverlay = document.querySelector('.contact-form__overlay');
-
-//   submit.addEventListener('click', () => {
-//     contactformoverlay.style.display = 'block';
-//   });
-
-//   closeBtn.addEventListener('click', () => {
-//     contactformoverlay.style.display = 'none';
-//   });
-
-// });
+ document.querySelector('.video3__popup span').onclick = () => {
+ 	document.querySelector('.video3__popup').style.display = 'none';
+ }
 
 
-// $("#myForm").submit(function(e) {
-//   e.preventDefault();
-// });
+ //Contact Form
+
+ document.addEventListener('DOMContentLoaded', () => {
+   const submit = document.querySelector('#submit');
+   const closeBtn = document.querySelector('.close');
+   const contactformoverlay = document.querySelector('.contact-form__overlay');
+
+   submit.addEventListener('click', () => {
+     contactformoverlay.style.display = 'block';
+   });
+
+   closeBtn.addEventListener('click', () => {
+     contactformoverlay.style.display = 'none';
+   });
+
+ });
 
 
-
-// function displayText(){
-//   // Selecting the input element and get its value --- FIRST NAME
-//   var text = document.getElementById("fname").value;
-
-//   // Displaying the value
-//   var output = document.getElementById("first-name");
-//   output.innerHTML = text;
+ $("#myForm").submit(function(e) {
+   e.preventDefault();
+ });
 
 
 
-//   // Selecting the input element and get its value --- LAST NAME
-//   var text2 = document.getElementById("lname").value;
+ function displayText(){
+   // Selecting the input element and get its value --- FIRST NAME
+  var text = document.getElementById("fname").value;
 
-//   // Displaying the value
-//   var output2 = document.getElementById("last-name");
-//   output2.innerHTML = text2;
-
-
-
-//   // Selecting the input element and get its value --- MESSAGE
-//   var text3 = document.getElementById("message").value;
-
-//   // Displaying the value
-//   var output3 = document.getElementById("message-content");
-//   output3.innerHTML = text3;
+   // Displaying the value
+   var output = document.getElementById("first-name");
+   output.innerHTML = text;
 
 
-// }
+
+   // Selecting the input element and get its value --- LAST NAME
+   var text2 = document.getElementById("lname").value;
+
+   // Displaying the value
+   var output2 = document.getElementById("last-name");
+   output2.innerHTML = text2;
+
+
+
+   // Selecting the input element and get its value --- MESSAGE
+   var text3 = document.getElementById("message").value;
+
+   // Displaying the value
+   var output3 = document.getElementById("message-content");
+   output3.innerHTML = text3;
+
+
+ }
 
 function toggle() {
   var blur = document.getElementById('blur')
   blur.classList.toggle('active');
-  var popup = document.getElementById('popup')
+  var popup = document.getElementById('vidPopup')
   popup.classList.toggle('active');
 }

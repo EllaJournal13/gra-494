@@ -66,7 +66,7 @@
 
     <!-- banner -->
     <div id="banner">
-      <div id="random" class="banner__fullimg" alt="random image" src="img/random/">
+      <div class="banner__fullimg" alt="random image">
         <div class="banner__callout">
           <h2>Want A Taste?</h2>
           <p>Belvedere Vodka is some of the finest and smoothest in the world. This Polish rye vodka originated in poland and was
@@ -192,20 +192,36 @@
     </div>
 
     <!-- video list -->
-    <div id="vids">
-      
-      <div class="video" id="blur">
+    <!-- <div id="vids">
+      <div class="video">
         <div class="video__container">
+          <div><img src="img/absolut.jpeg" class="video__img" onclick="toggle()"></div>
+        </div>
+        <div class="video__text">
+          <h2>The True American Vodka</h2>
+          <p>Tito's Handmade Vodka was founded in Austin, Texas in 1997.  This all American vodka is made from yellow corn, rather than potatoes or wheat.  It's distilled 6 times and unaged.  The founder is the man in the vieo, Bert Butle Beveridge who is nicknamed Tito due to the shortening of his nickname Bertito, which was given to him by his latino caregivers as a child.  Be sure to try this all American vodka!</p>
+        </div>
+      </div>
+      <div class="video__popup" id="vidPopup">
+        <span onclick="toggle()">&times;</span>
+        <video src="img/video.mp4" muted autoplay controls></video>
+      </div>
+    </div> -->
+
+    <div id="vids">
+
+      <div class="video">
+        <div class="video__container" id="blur">
           <div class="video__thumbnail video1">
-            <div><img src="img/absolut.jpeg" alt="x" width="700px" height="400px" align-items="center" onclick="toggle()"></div>
+            <div><img src="img/absolut.jpeg" class="video__img"></div>
+            <!-- <div><img src="img/absolut.jpeg" alt="x" width="700px" height="400px" align-items="center" onclick="toggle()"></div> -->
             <!-- <video src="img/video.mp4" poster="img/vid1-img.jpg" muted></video> -->
           </div>
         </div>
 
         <div class="video__popup-container video1__popup" id="popup">
           <span>&times;</span>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/cbfDGMfXimA"></iframe>
-        </iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/cbfDGMfXimA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <!-- <video src="img/video.mp4" autoplay controls></video> -->
         </div>
         <div class="video__text">
@@ -214,15 +230,17 @@
         </div>
       </div>
 
-      <!-- <div class="video">
+      <div class="video">
         <div class="video__container">
           <div class="video__thumbnail video2">
-            <video src="img/video.mp4" poster="img/vid2-img.jpg" muted></video>
+            <div><img src="img/cavsilver.jpg" class="video__img"></div>
+            <!-- <video src="img/video.mp4" poster="img/cavsilver.jpg" muted></video> -->
           </div>
         </div>
         <div class="video__popup-container video2__popup">
           <span>&times;</span>
-          <video src="img/video.mp4" autoplay controls></video>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/n4x1NMnl32U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- <video src="img/video.mp4" autoplay controls></video> -->
         </div>
         <div class="video__text">
             <h2>The True American Vodka</h2>
@@ -233,18 +251,20 @@
       <div class="video">
         <div class="video__container">
           <div class="video__thumbnail video3">
-            <video src="img/video.mp4" poster="img/vid3-img.jpg" muted></video>
+            <div><img src="img/vid2-img.jpg" class="video__img"></div>
+            <!-- <video src="img/video.mp4" poster="img/vid3-img.jpg" muted></video> -->
           </div>
         </div>
         <div class="video__popup-container video3__popup">
           <span>&times;</span>
-          <video src="img/video.mp4" muted autoplay controls></video>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/rIi-9nhmig0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- <video src="img/video.mp4" muted autoplay controls></video> -->
         </div>
         <div class="video__text">
             <h2>The True American Vodka</h2>
             <p>Tito's Handmade Vodka was founded in Austin, Texas in 1997.  This all American vodka is made from yellow corn, rather than pottoes or wheat.  It's distilled 6 times and unaged.  The founder is the man in the video, Bert Butle Beveridge who is nicknamed Tito due to the shortening of his nickname Bertito, which was given to him by his latino caregivers as a child.  be sure to try this All American Vodka!</p>
         </div>
-      </div> -->
+      </div>
     </div>
 
     <!-- contact form-->
@@ -272,6 +292,7 @@
         <input type="text" id="fname" name="fname"><br>
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname"><br>
+        <label for="message">Message:</label><br>
         <textarea name="message" id="message" rows="10" cols="30"></textarea><br>
         <input type="submit" id="submit" value="Submit" onclick="displayText()">
       </form>
